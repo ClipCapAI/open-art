@@ -1,32 +1,32 @@
-name: Feature request / 功能建议
-description: 提出新功能，或改进现有的创作流程。
+name: Feature request
+description: Suggest a new feature or an improvement to the creative workflow.
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        提交前请搜索[已有 Issues](https://github.com/ClipCapAI/open-art/issues?q=is%3Aissue)；请勿上传 API Key 等敏感信息。可使用中文或英文填写。
+        Before submitting, search [existing issues](https://github.com/ClipCapAI/open-art/issues?q=is%3Aissue). Do not include API keys or other sensitive information.
   - type: textarea
     id: problem
     attributes:
-      label: What problem are you trying to solve? / 遇到的问题
-      description: 你想完成什么，目前有什么不便？
-      placeholder: 例如：想用同一模型批量生成多个图片节点，目前需要逐个操作。
+      label: What problem are you trying to solve?
+      description: Describe what you want to accomplish and what makes it difficult today.
+      placeholder: "Example: I want to generate several image nodes with the same model, but currently have to submit each task separately."
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Suggested improvement / 希望如何改进
-      description: 描述期望的功能或效果，不需要提供技术方案。
-      placeholder: 例如：选中多个图片节点后，一次提交生成任务。
+      label: Suggested improvement
+      description: Describe the behavior or outcome you would like. A technical implementation plan is not required.
+      placeholder: "Example: Select multiple image nodes and submit their generation tasks in one action."
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Additional information / 补充信息
-      description: 可提供截图、参考产品或相关链接。支持拖入图片或附件，请先移除敏感信息。
+      label: Additional information
+      description: Optionally add screenshots, examples from other products, or related links. Drag and drop images or attachments here after removing sensitive information.
     validations:
       required: false

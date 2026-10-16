@@ -1,35 +1,35 @@
-name: Bug report / 问题反馈
-description: 报告 open-art 中的错误、异常或与预期不符的行为。
+name: Bug report
+description: Report an error or unexpected behavior in open-art.
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        提交前请搜索[已有 Issues](https://github.com/ClipCapAI/open-art/issues?q=is%3Aissue)；请勿上传 API Key 等敏感信息。可使用中文或英文填写。
+        Before submitting, search [existing issues](https://github.com/ClipCapAI/open-art/issues?q=is%3Aissue). Do not include API keys or other sensitive information.
   - type: textarea
     id: description
     attributes:
-      label: What happened? / 问题描述
-      description: 发生了什么？你原本期望什么结果？
-      placeholder: 例如：生成任务显示完成，但画布中没有出现图片；预期是生成结果出现在对应节点中。
+      label: What happened?
+      description: Describe what happened and what you expected instead.
+      placeholder: "Example: A generation task completes, but no image appears in its canvas node. I expected the generated image to appear in that node."
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce / 复现步骤
-      description: 简单说明操作过程；偶发问题填写出现前的操作即可。
+      label: Steps to reproduce
+      description: List the steps that led to the problem. For intermittent issues, describe what you were doing before it happened.
       placeholder: |
-        1. 打开项目和画布
-        2. 执行……
-        3. 出现……
+        1. Open a project and canvas.
+        2. ...
+        3. Observe ...
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Additional information / 补充信息
-      description: 可提供版本、系统、服务商与模型、截图或错误日志。支持拖入图片或附件，请先移除敏感信息。
+      label: Additional information
+      description: Optionally share your app version, operating system, provider and model, screenshots, or error logs. Drag and drop images or attachments here after removing sensitive information.
     validations:
       required: false
